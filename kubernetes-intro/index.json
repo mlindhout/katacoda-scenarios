@@ -1,0 +1,29 @@
+{
+  "title": "Kubernetes Introduction",
+  "description": "Gettings started with k8s",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "What is Docker?",
+      "text": "step1.md"
+    },{
+      "title": "Starting your first container",
+      "text": "step2.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
