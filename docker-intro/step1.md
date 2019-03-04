@@ -1,7 +1,7 @@
-This is your first step.
+## What is Docker
 
-## Task
+To be short: Docker is a container runtime. 
 
-This is an _example_ of creating a scenario and running a **command**
+The long answer is: Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other Linux machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
 
-`echo 'Hello World'`{{execute}}
+So, head on to the next step and start you first container.
