@@ -1,0 +1,34 @@
+{
+  "title": "Docker Compose Introduction",
+  "description": "Gettings started with Docker Compose",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Docker Compose Intro",
+      "text": "step1.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "docker-compose.yml",
+        "target": "~/"
+      }
+    ]
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

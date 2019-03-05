@@ -1,4 +1,4 @@
-You've completed this Docker introduction. You can continue with [Docker Compose](https://www.katacoda.com/jointeffort/scenarios/docker-compose).
+You've completed this Docker introduction. You can continue with [Docker Swarm](https://www.katacoda.com/jointeffort/scenarios/docker-swarm).
 
 Install [Docker Desktop](https://www.docker.com/products/docker-desktop).
 
