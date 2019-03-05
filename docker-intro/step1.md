@@ -8,6 +8,6 @@ The advantages of containers are numerous. To name a few eye-catchers:
 - relief ops from installing the application over and over again
 - easy rolling upgrades
 - easy rollback to previous versions of your application (images are tagged, use them as versions)
-- easier debugging. If some container version has a bug, spin in up locally and fix it! 
+- easier debugging. If some production container version has a bug, spin it up locally and fix it! 
 
 So, head on to the next step and start you first container.

@@ -10,6 +10,21 @@
     },{
       "title": "Starting your first container",
       "text": "step2.md"
+    },{
+      "title": "More run options",
+      "text": "step3.md"
+    },{
+      "title": "Listing containers",
+      "text": "step4.md"
+    },{
+      "title": "More on images",
+      "text": "step5.md"
+    },{
+      "title": "Self-healing systems",
+      "text": "step6.md"
+    },{
+      "title": "Storage",
+      "text": "step7.md"
     }],
     "intro": {
       "text": "intro.md",
