@@ -5,6 +5,8 @@ You should see an empty list. To see all containers, either running or stopped, 
 The status column indicates whether the container is running or not. If you've follewed this tutorial from the start, you should see 2 containers. 
 
 #### Starting a stopped container
+Now, copy one of the container id's in the first column and execute:
+`docker start <container-id>`
 
 #### Removing containers
 
