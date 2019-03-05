@@ -30,5 +30,4 @@ Press `Ctrl+C` to abort the container and run a new one with port-forwarding ena
 
 This 'links' port 80 on the host running the Docker deamon to port 80 in the container. Now try again [the link](https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/) and you should see Nginx' default welcome page.
 
-#### Cleanup
-When done, press 'Ctrl+C' to kill the container
+When done, press 'Ctrl+C' to kill the container.

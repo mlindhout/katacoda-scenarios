@@ -14,17 +14,14 @@
       "title": "More run options",
       "text": "step3.md"
     },{
-      "title": "Listing containers",
+      "title": "More on images",
       "text": "step4.md"
     },{
-      "title": "More on images",
+      "title": "Self-healing systems",
       "text": "step5.md"
     },{
-      "title": "Self-healing systems",
-      "text": "step6.md"
-    },{
       "title": "Storage",
-      "text": "step7.md"
+      "text": "step6.md"
     }],
     "intro": {
       "text": "intro.md",
