@@ -17,10 +17,10 @@
     }
   },
   "assets": {
-    "host01": [
+    "client": [
       {
-        "file": "docker-compose.yml",
-        "target": "~/"
+        "file": "assets/docker-compose.yml",
+        "target": "/home/scrapbook/tutorial/"
       }
     ]
   },
