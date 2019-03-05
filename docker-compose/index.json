@@ -9,7 +9,7 @@
       "text": "step1.md"
     }],
     "assets": {
-      "host01": [
+      "client": [
         {
           "file": "docker-compose.yml",
           "target": "/home/scrapbook/tutorial/"
