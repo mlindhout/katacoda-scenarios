@@ -8,13 +8,6 @@
       "title": "Docker Compose Intro",
       "text": "step1.md"
     }],
-    "intro": {
-      "text": "intro.md",
-      "credits": ""
-    },
-    "finish": {
-      "text": "finish.md"
-    },
     "assets": {
       "host01": [
         {
@@ -22,6 +15,13 @@
           "target": "/home/scrapbook/tutorial/"
         }
       ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
     }
   },
   "environment": {
