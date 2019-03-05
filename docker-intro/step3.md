@@ -11,13 +11,17 @@ Now, copy one of the container id's in the first column and execute:
 
 The output should be the same id you passed in, indicating Docker started that container. This is different from the initial run command, which attached to the container and showed the process' output. Play around with the following commands:
 
-Show the running containers: `docker ps`{{execute}}
+Show the running containers:
+`docker ps`{{execute}}
 
-View the logs (and follow) of a specific container: `docker logs -f <container-id>`{{execute}}
+View the logs (and follow) of a specific container:
+`docker logs -f <container-id>`{{execute}}
 
-Press 'Ctrl+C' and stop the container: `docker stop <container-id>`{{execute}}
+Press 'Ctrl+C' and stop the container:
+`docker stop <container-id>`{{execute}}
 
-Start and attach to the output of the container: `docker start -i <container-id>`{{execute}}
+Start and attach to the output of the container:
+`docker start -i <container-id>`{{execute}}
 
 #### Removing containers
 
