@@ -12,6 +12,7 @@
       "text": "step2.md"
     }],
     "intro": {
+      "courseData": "launch.sh",
       "text": "intro.md",
       "credits": ""
     },
