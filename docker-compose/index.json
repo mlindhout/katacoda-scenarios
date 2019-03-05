@@ -14,22 +14,15 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "docker-compose.yml",
+          "target": "/home/scrapbook/tutorial/"
+        }
+      ]
     }
-  },
-  "assets": {
-    "client": [
-      {
-        "file": "docker-compose.yml",
-        "target": "/home/scrapbook/tutorial/"
-      }
-    ],
-    "host01": [
-      {
-        "file": "docker-compose.yml",
-        "target": "/home/scrapbook/tutorial/"
-      }
-    ]
-
   },
   "environment": {
     "uilayout": "terminal",
