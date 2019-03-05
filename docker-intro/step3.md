@@ -7,18 +7,17 @@ The status column indicates whether the container is running or not. If you've f
 #### Starting a stopped container
 Now, copy one of the container id's in the first column and execute:
 
-`docker start <container-id>`
+`docker start <container-id>`{{execute}}
 
 The output should be the same id you passed in, indicating Docker started that container. This is different from the initial run command, which attached to the container and showed the process' output. Play around with the following commands:
 
 Show the running containers: `docker ps`{{execute}}
 
-View the logs (and follow) of a specific container: `docker logs -f <container-id>`
+View the logs (and follow) of a specific container: `docker logs -f <container-id>`{{execute}}
 
-Press 'Ctrl+C' and stop the container: `docker stop <container-id>`
+Press 'Ctrl+C' and stop the container: `docker stop <container-id>`{{execute}}
 
-Start and attach to the output of the container
-
+Start and attach to the output of the container: `docker start -i <container-id>`{{execute}}
 
 #### Removing containers
 
@@ -31,3 +30,6 @@ docker rm `docker ps -aq`
 
 #### Names
 Notice the **name** column. Each container has a name, which you can specify with the `--name` option. When not specified, Docker generates one, by default consisting of an adjective and a name.
+
+#### More info
+[Docker run reference](https://docs.docker.com/engine/reference/run/)
