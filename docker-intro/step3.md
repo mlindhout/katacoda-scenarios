@@ -8,8 +8,9 @@ The status column indicates whether the container is running or not. If you've f
 
 #### Removing containers
 
-
-`docker rm '`docker ps -aq'``{{execute}}
+```
+docker rm `docker ps -aq`
+```{{execute}}
 
 #### Auto cleanup
 `docker run --rm --name my_nginx -p 80:80 nginx`{{execute}}
