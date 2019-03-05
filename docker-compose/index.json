@@ -19,10 +19,17 @@
   "assets": {
     "client": [
       {
-        "file": "assets/docker-compose.yml",
+        "file": "docker-compose.yml",
+        "target": "/home/scrapbook/tutorial/"
+      }
+    ],
+    "host01": [
+      {
+        "file": "docker-compose.yml",
         "target": "/home/scrapbook/tutorial/"
       }
     ]
+
   },
   "environment": {
     "uilayout": "terminal",
