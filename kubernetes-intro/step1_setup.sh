@@ -184,20 +184,15 @@ main_master() {
 
 main_node01() {
     clear;
-    hideCursor;
-    installStdinSpinner;
     echo "[$(simple_date)] Setting up... (~1 min)"
-    (
-        prePullImages &
-        installStern &
-        wait;
-        waitForDockerUpgrade;
-        runDockerRegistry;
-        waitForDockerRegistryLocal;
-        waitForKubernetes;
-    ) | stdin-spinner
+    prePullImages &
+    installStern &
+    wait;
+    waitForDockerUpgrade;
+    runDockerRegistry;
+    waitForDockerRegistryLocal;
+    waitForKubernetes;
     echo "[$(simple_date)] done"
-    restoreCursor;
     echo '# log output from your apps in the default namespace will appear below.'
     echo 'node01 $ stern ""'
     stern ""
