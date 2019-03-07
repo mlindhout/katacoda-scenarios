@@ -6,13 +6,23 @@
   "details": {
     "steps": [{
       "title": "What is Docker?",
+      "code": "step1_setup.sh",
       "text": "step1.md"
     },{
       "title": "Starting your first container",
       "text": "step2.md"
     }],
     "assets": {
-      "client": [
+      "master": [
+        {
+          "file": "id_rsa",
+          "target": "~/.ssh/"
+        },
+        {
+          "file": "setup_helpers.sh.inc",
+          "target": "/opt/",
+          "chmod": "+x"
+        }
       ]
     },
     "intro": {
