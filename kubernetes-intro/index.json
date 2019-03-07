@@ -11,6 +11,14 @@
       "title": "Starting your first container",
       "text": "step2.md"
     }],
+    "assets": {
+      "client": [
+        {
+          "file": "minikube",
+          "target": "/home/scrapbook/tutorial/"
+        }
+      ]
+    },
     "intro": {
       "text": "intro.md",
       "credits": ""
@@ -21,9 +29,22 @@
   },
   "environment": {
     "uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n",
+    "dashboard": "Dashboard",
+    "uidependencies": [
+      "/socket.io/socket.io.js",
+      "/javascripts/term.js",
+      "/javascripts/terminal-application.js"
+    ],
+    "dashboards": [
+      {
+        "name": "Kubernetes Dashboard",
+        "port": 30080
+      }
+    ]
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
+    "port": 30080,
+    "dockerimage": "kubeadm-cluster2-running"
   }
 }
