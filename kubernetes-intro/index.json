@@ -13,10 +13,6 @@
     }],
     "assets": {
       "client": [
-        {
-          "file": "minikube",
-          "target": "/home/scrapbook/tutorial/"
-        }
       ]
     },
     "intro": {
