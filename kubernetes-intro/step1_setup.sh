@@ -167,9 +167,6 @@ restoreCursor() {
 main_master() {
     clear;
     echo "[$(simple_date)] Setting up... (~2 min)"
-    hideCursor;
-    installStdinSpinner;
-    (
         installTools &
         prePullImages &
         (
@@ -179,13 +176,8 @@ main_master() {
             deployDashboard;
             deployIngressController;
             deployPVController;
-            waitForDockerRegistryRemote;
-            waitForDashboard;
-        ) &
-        wait;
-    ) | stdin-spinner
+        )
     echo "[$(simple_date)] done"
-    restoreCursor;
     configureSSH;
     bash;
 }

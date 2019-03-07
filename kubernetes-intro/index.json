@@ -5,11 +5,11 @@
   "time": "5 minutes",
   "details": {
     "steps": [{
-      "title": "What is Docker?",
+      "title": "Up & running",
       "code": "step1_setup.sh",
       "text": "step1.md"
     },{
-      "title": "Starting your first container",
+      "title": "Deploying a pod",
       "text": "step2.md"
     }],
     "assets": {
