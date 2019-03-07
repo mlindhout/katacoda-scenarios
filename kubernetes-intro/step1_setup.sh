@@ -195,7 +195,6 @@ main_node01() {
     echo "[$(simple_date)] done"
     echo '# log output from your apps in the default namespace will appear below.'
     echo 'node01 $ stern ""'
-    stern ""
 }
 
 main() {
