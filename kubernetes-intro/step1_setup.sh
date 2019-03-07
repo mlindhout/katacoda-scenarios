@@ -167,6 +167,9 @@ restoreCursor() {
 main_master() {
     clear;
     echo "[$(simple_date)] Setting up... (~2 min)"
+    hideCursor;
+    installStdinSpinner;
+    (
         installTools &
         prePullImages &
         (
@@ -176,25 +179,36 @@ main_master() {
             deployDashboard;
             deployIngressController;
             deployPVController;
-        )
+            waitForDockerRegistryRemote;
+            waitForDashboard;
+        ) &
+        wait;
+    ) | stdin-spinner
     echo "[$(simple_date)] done"
+    restoreCursor;
     configureSSH;
     bash;
 }
 
 main_node01() {
     clear;
+    hideCursor;
+    installStdinSpinner;
     echo "[$(simple_date)] Setting up... (~1 min)"
-    prePullImages &
-    installStern &
-    wait;
-    waitForDockerUpgrade;
-    runDockerRegistry;
-    waitForDockerRegistryLocal;
-    waitForKubernetes;
+    (
+        prePullImages &
+        installStern &
+        wait;
+        waitForDockerUpgrade;
+        runDockerRegistry;
+        waitForDockerRegistryLocal;
+        waitForKubernetes;
+    ) | stdin-spinner
     echo "[$(simple_date)] done"
+    restoreCursor;
     echo '# log output from your apps in the default namespace will appear below.'
     echo 'node01 $ stern ""'
+    stern ""
 }
 
 main() {
